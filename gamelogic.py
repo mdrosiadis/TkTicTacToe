@@ -1,3 +1,6 @@
-#KOSTAS NIKOLAKOPOULOS
+#INSPECTOR LEKAS
 # commit test
-#Alexis test
+class GameBoard():
+    def __init__(self):
+        self.fields = [" "," "," "," "," "," "," "," "," "]
+
