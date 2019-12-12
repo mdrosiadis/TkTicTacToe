@@ -49,9 +49,9 @@ gameSize = 3
 buttons = []
 
 
-for c in range(3):
+for c in range(gameSize):
     buttons.append([])
-    for r in range(3):
+    for r in range(gameSize):
         btn = Button(w, text = "_", padx = 50, pady= 50, fg = "red")
         btn.config(command = functools.partial(changeStatus, btn))
         btn.grid(row = startRow + r, column = startCol + c)
@@ -62,7 +62,7 @@ for c in range(3):
 #Reset - Exit buttons
 ResetButton = Button(w,text = "Reset",padx ='40',pady ='20',borderwidth = 2).grid(row = 5,column = 0)
 Label3 = Label(w, text="Player Turn-Victory",borderwidth = 5).grid(row = 5,column = 1)
-ExitButton = Button(w,text = "Exit",padx ='40',pady ='20',borderwidth = 2,command = w.quit ,).grid(row = 5,column = 2)
+ExitButton = Button(w,text = "Exit",padx ='40',pady ='20',borderwidth = 2,command = w.destroy).grid(row = 5,column = 2)
 
 
 w.mainloop()
