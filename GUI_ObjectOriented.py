@@ -1,6 +1,5 @@
 from tkinter import *
 import functools
-from random import randint
 
 
 def changeStatus(btn):
